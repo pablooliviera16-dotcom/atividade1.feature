@@ -3,13 +3,13 @@
             Funcionalidade: Configurando tamanho do produto
             Como cliente da EBAC-SHOP
             Quero configurar meu produto de acordo com meu tamanho e gosto
-            E escolher a quantidade
+            e escolher a quantidade
             Para depois inserir no carrinho
 
             Esquema do Cenário: Configurando o produto
-            Quando eu escolher <cor> e o <tamanho>
-            E também a <quantidade> será limita por 10 produtos por venda apenas 
-            Então devera mostrar o produto configurado já
+            Quando eu escolher <cor>, <tamanho> e a <quantidade> 
+            E o sistema também deve alertar que só pode escolher "10 produto por venda"
+            Então depois de escolhido os produto o sistema deve alerta que "O produto foi selecionado com sucesso no carrinho"
 
             Exemplos:
             | cor      | tamanho | quantidade |
@@ -17,9 +17,9 @@
             | azul     |   s     |     1      |
             | vermelho |   m     |     2      |
             | laranja  |   l     |     1      |
-            | azuk     |   xl    |     3      |
+            | azul     |   xl    |     3      |
 
-            Dado que feita já a escolha do produto 
-            Quando a pessoa não quiser mais pode clicar no botão de limpar 
-            E quando clicar neste botão irá sumir a escolha da pessoa 
-            Então deixando limpo a área para a escolha de um novo produto 
+            Cenário: Cliente limpando opções 
+            Dado que o cliente  esteja configurando o produto 
+            Quando ele não quiser mais o protudo podera cliclar no botão de limpar 
+            Então liberando espaço para outras compras 
