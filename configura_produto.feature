@@ -7,7 +7,7 @@
             Para depois inserir no carrinho
 
             Contexto:
-            Dado que o cliente esteja configurando o produto
+            Dado  que o cliente esteja configurando o produto
 
             Esquema do Cenário: Configurando o produto
             Quando eu escolher <cor>, <tamanho> e a <quantidade> que é permitida
