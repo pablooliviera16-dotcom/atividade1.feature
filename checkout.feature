@@ -4,14 +4,14 @@ Funcionalidade: Finalizando a compra
 Como cliente da EBAC-SHOP
 Quero concluir meu cadastro 
 Para finalizar minha compra 
-Cenário: Colocando email errado
-Dado que o cliente esteja na área de login
-Quando Cliente colocar o usuário "jose.enersto@gmail.com"
-E a senha "copa22"
-Então o sistema deve mostrar uma mensagem de erro "Usuário ou senha incorretos!"
 
 Contexto:
 Dado que estou na tela de cadastro
+
+Cenário: Colocando email errado
+Quando Cliente colocar o usuário "jose.enersto@gmail.com"
+E a senha "copa22"
+Então o sistema deve mostrar uma mensagem de erro "Usuário ou senha incorretos!"
 
 Cenário: Cadastrando meus dados 
 Quando o cliente cadastar todos os dados pessoais dele corretamente 
